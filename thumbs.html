@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <body>
+    <h1>TensorFlow.js</h1>
+    <h2>Train a KNN classifier (K Nearest Neighbours)</h2>
+    <img id="prediction" src="Neither.png" />
+    <div id="probability">
+        <br />
+        <br />
+        Probability:
+    </div>
+    <!-- Add an image that we will use to test -->
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>    <!-- Load index.js after the content of the page -->
+    <br />
+    <br />
+    <h2>Training:</h2>
+    <button id="thumbs-up">Thumbs up</button>
+    <button id="thumbs-down">Thumbs down</button>
+    <button id="neither">Neither</button>
+    <script src="thumbs.js"></script>
+  </body>
+</html>
