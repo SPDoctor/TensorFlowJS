@@ -1,0 +1,29 @@
+<html>
+<head>
+  <!-- Load the latest version of TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+</head>
+<body>
+  <h1>TensorFlow.js</h1>
+  <h2>Butterfly Classifier with layer grid</h2>
+  <br />
+  <div id="labels"></div>
+  <br />
+  <div id="prediction">
+      Probability:
+  </div>
+  <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+  <br />
+  <br />
+  <br />
+  <select id="layer">
+    <option>none</option>
+  </select>
+  <br />
+  <br />
+  <canvas id="grid"></canvas>
+  <br />
+  <script src="layers.js"></script>
+</body>
+</html>
