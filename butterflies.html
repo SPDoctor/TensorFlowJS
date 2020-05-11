@@ -1,48 +1,51 @@
+<!doctype html>
 <html>
-<head>
-  <!-- Load the latest version of TensorFlow.js -->
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
-</head>
-<body>
-  <h1>TensorFlow.js</h1>
-  <h2>Butterfly Classifier</h2>
-  <br />
-  <div id="labels"></div>
-  <br />
-  <div id="prediction">
-      Probability:
-  </div>
-  <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
-  <br />
-  <h2 id="predicted-name"></h2>
-  <br />
-  <img id="predicted-image" src="Neither.png" width="100" height="100"></img>
-  <br />
-  <br />
-  <h2>Samples:</h2>
-  <table>
-    <tr>
-      <td>
-        <img id="Peacock" src="Peacock.jpg" />
-      </td>
-      <td>
-        <img id="RedAdmiral" src="RedAdmiral.jpg" />
-      </td>
-      <td>
-        <img id="PaintedLady" src="PaintedLady.jpg" />
-      </td>
-      <td>
-        <img id="Monarch" src="Monarch.jpg" />
-      </td>
-    </tr>
-    <tr>
-        <td>Peacock</td>
-        <td>Red Admiral</td>
-        <td>Painted Lady</td>
-        <td>Monarch</td>
+  <head>
+    <meta charset="utf-8" />
+    <title>TensorFlow.js Butterfly classifier</title>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+  </head>
+  <body>
+    <h1>TensorFlow.js</h1>
+    <h2>Butterfly Classifier</h2>
+    <br />
+    <div id="labels"></div>
+    <br />
+    <div id="prediction">
+        Probability:
+    </div>
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    <br />
+    <h2 id="predicted-name"></h2>
+    <br />
+    <img id="predicted-image" src="Neither.png" width="100" height="100"></img>
+    <br />
+    <br />
+    <h2>Samples:</h2>
+    <table>
+      <tr>
+        <td>
+          <img id="Peacock" src="Peacock.jpg" />
+        </td>
+        <td>
+          <img id="RedAdmiral" src="RedAdmiral.jpg" />
+        </td>
+        <td>
+          <img id="PaintedLady" src="PaintedLady.jpg" />
+        </td>
+        <td>
+          <img id="Monarch" src="Monarch.jpg" />
+        </td>
       </tr>
-  </table>
-  <script src="butterflies.js"></script>
-</body>
+      <tr>
+          <td>Peacock</td>
+          <td>Red Admiral</td>
+          <td>Painted Lady</td>
+          <td>Monarch</td>
+        </tr>
+    </table>
+    <script src="butterflies.js"></script>
+  </body>
 </html>

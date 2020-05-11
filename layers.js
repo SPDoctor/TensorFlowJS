@@ -2,7 +2,7 @@ const webcamElement = document.getElementById('webcam');
 const canvasGrid = document.getElementById('grid');
 const layerSelect = document.getElementById('layer');
 const labelsDiv = document.getElementById('labels');
-const modelRoot = "http://localhost:3000/Butterflies/";
+const modelRoot = "http://localhost:8080/Butterflies/";
 
 async function app() {
     var preset = "";
