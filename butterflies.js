@@ -2,7 +2,7 @@ const webcamElement = document.getElementById('webcam');
 const canvasGrid = document.getElementById('grid');
 const layerSelect = document.getElementById('layer');
 const labelsDiv = document.getElementById('labels');
-const modelRoot = "http://localhost:8080/Butterflies/";
+const modelRoot = document.URL.substr(0,document.URL.lastIndexOf("/")) + "/";
 const probability_threshold = 0.95;
 
 async function app() {
